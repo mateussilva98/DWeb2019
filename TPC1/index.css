@@ -1,0 +1,103 @@
+#header1 {
+    width: 100%;
+	height: 300px;
+	background-image: url(resources/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+    background-size: cover;
+}
+body {
+	background-color: white;
+	font-family: Open Sans, sans-serif;
+	color: black;
+}
+h1 {
+	text-align: center;
+	color: black;
+	font-family: Open Sans, sans-serif;
+}
+
+#envelope {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 25px;
+}
+
+#menu {
+	background-color: #269300;
+	height: 25px;
+	border-radius: 20px;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 5px;
+	padding: 0px;
+	background-color: #269300;
+}
+
+#menu ul ul{
+	display: none;
+}
+
+#menu ul li{
+	float: right;
+}
+#menu ul li a {
+	text-decoration: none;
+	padding: 0px 20px;
+	line-height: 25px;
+	color: white;
+}
+#menu ul li a:hover {
+	background-color: #cccccc;
+	border-radius: 20px;
+}
+
+section {
+	background-color: lightgrey;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 1px 1px 20px black;
+}
+
+section * {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+footer {
+	margin-top: 10px;
+	font-size: small;
+	text-align: center;
+}
+
+#footerassi {
+	margin-top: 15px;
+	font-size: x-small;
+	text-align: center;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    border: 2px solid #269300;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #269300;
+}
+
+tr:hover {
+	background-color: #269300;
+}
+#indice{
+	text-align: center;
+	text-decoration:none;
+}
+
