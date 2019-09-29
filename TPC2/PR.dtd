@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT entrega (info,resumo,ficheiros+,data)>
+
+<!ELEMENT info (titulo,subtitulo,data-inicio,data-fim,workteam) >
+
+<!ELEMENT titulo (#PCDATA) >
+
+<!ELEMENT subtitulo (#PCDATA) >
+
+<!ELEMENT data-inicio (#PCDATA) >
+
+<!ELEMENT data-fim (#PCDATA) >
+
+<!ELEMENT workteam (nome,link-git)+ >
+
+<!ELEMENT nome (#PCDATA) >
+
+<!ELEMENT link-git (#PCDATA) >
+
+<!ELEMENT resumo (paragrafo+) >
+
+<!ELEMENT paragrafo (#PCDATA|negrito|italico)* >
+
+<!ELEMENT negrito (#PCDATA) >
+
+<!ELEMENT italico (#PCDATA) >
+
+<!ELEMENT ficheiros (#PCDATA) >
+
+<!ELEMENT data (#PCDATA) >
+

@@ -40,7 +40,7 @@ header {
 header::before{ /*é este que possui a imagem e que vai receber a animação*/
     animation: desce-imagem 2.3s 0.6s /*ease-out*/cubic-bezier(0,0.5,0,1) forwards; /*ease-out -- rapido no inicio e lento no final --- usado para elementos em moving in;;; forward - ate ao ultimo frame e para lá ---- podemos usar bezier curves para nao usar as 4 animações predefinidas --- o primeiro valor é a duração da animação --- segundo valor é o delay antes de começar a animação*/
     opacity: 0; /*sem isto e com o delay, a imagem aparecia e voltava a desaparecer*/
-    background-image:linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8)),url(/resources/iguana.jpg);
+    background-image:linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,0.8)),url(resources/iguana.jpg);
     content: "";
     background-size: cover;
     position: absolute;

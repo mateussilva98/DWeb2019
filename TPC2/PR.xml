@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrega SYSTEM "file:/Users/mateussilva/Desktop/aula2_daweb/tpc2/PR.dtd">
+<entrega>
+    <info>
+        <titulo>Entrega TPC2</titulo>
+        <subtitulo>DTD's</subtitulo>
+        <data-inicio>26-09-2019</data-inicio>
+        <data-fim>26-09-2019</data-fim>
+        <workteam>
+            <nome>Mateus Silva</nome>
+            <link-git>https://github.com/mateussilva98</link-git>
+            <nome>Outro aluno só para testar se o dtd está correto</nome>
+            <link-git></link-git>
+        </workteam>
+    </info>
+    <resumo>
+        <paragrafo>Este ficheiro corresponde ao ficheiro XML que segue a formalização do ficheiro <negrito>PR.dtd</negrito>.</paragrafo>
+        <paragrafo>Para resolver este exercício do TPC foi importante analisar com atenção a página web fornecida pelo professor (http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm) para perceber a estrutura do ficheiro.</paragrafo>
+    </resumo>
+    <ficheiros>PR.dtd</ficheiros>
+    <ficheiros>PR.xml</ficheiros>
+    <ficheiros>ex7.dtd</ficheiros>
+    <ficheiros>ex6.txt</ficheiros>
+    <data>26-09-2019</data>
+</entrega>

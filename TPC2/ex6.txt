@@ -1,0 +1,16 @@
+
+(a)Qual o "IDENTI" dos arqueossítios do concelho de Amares.
+
+//IDENTI[../CONCEL=" Amares "]
+
+
+(b)Quais os concelhos com arqueossítios registados.
+
+//CONCEL[../TIPO[@ASSUNTO='arqueossitio']]
+
+(solução com repetições)
+
+
+(c)Seleccione as descrições dos arqueossítios do concelho de Montalegre.
+
+//DESCRI[../CONCEL=' Montalegre ']
