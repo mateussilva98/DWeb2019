@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/Users/mateussilva/Desktop/Desenvolvimento%20Web/aula3_daweb/pr_oficial.dtd">
+<pr>
+    <metadata>
+        <keyname>DAWeb1920</keyname>
+        <title>Trabalho prático 3</title>
+        <subtitle>Formatação de HTML e XML.</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>5-10-2019</bdate>
+        <edate>6-10-2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81952</identifier>
+            <name>Mateus Ferreira da Silva</name>
+            <email>a81952@alunos.uminho.pt</email>
+            <git>https://github.com/mateussilva98</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Este trabalho prático consiste, essencialmente, na realização de duas <b>stylesheets</b>.</p>
+        <p>Uma das stylesheets (ficheiro <i>PR.xsl</i>) serve para a transformação do <i>PR.xml</i>, que contém a informação correspondente ao TP3, no <i>PR.html</i>, que é a representação do PR numa página web.</p>
+        <p>A outra stylesheet (ficheiro <i>arq.xsl</i>) serve para processar o <i>dataset</i> de arqueosítios presente num ficheiro <i>XML (Arqueossítios do Nordeste Português)</i>, que pode ser encontrado no seguinte link: <xref url="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/index.html">Clique aqui</xref>. O <i>website</i> resultante está localizado dentro da pasta <i>website_arq</i>, sendo a página principal o ficheiro <i>index.html</i>.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC3/PR.xml">PR.xml</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC3/PR.xsl">PR.xsl</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC3/PR.html">PR.html</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC3/arq.xsl">arq.xsl</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/tree/master/TPC3/website">website</deliverable>
+    </deliverables>
+</pr>
