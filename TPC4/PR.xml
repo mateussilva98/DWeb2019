@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/Users/mateussilva/Desktop/Desenvolvimento%20Web/aula3_daweb/pr_oficial.dtd">
+<pr>
+    <metadata>
+        <keyname>DAWeb1920_TPC4</keyname>
+        <title>Trabalho prático 4</title>
+        <subtitle>Transformação de XML com XSL e servidor de páginas em Node.js</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>11-10-2019</bdate>
+        <edate>12-10-2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81952</identifier>
+            <name>Mateus Ferreira da Silva</name>
+            <email>a81952@alunos.uminho.pt</email>
+            <git>https://github.com/mateussilva98</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Este trabalho pode ser dividido em <b>duas tarefas</b>:</p>
+        <p> - Criar uma <i>stylesheet</i> (XSL) para transformar o ficheiro de arqueossítios (XML), disponivel <xref url="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/index.html">aqui</xref>, em vários ficheiros XML, cada um com os distintos arqueossítios. Após isso é usada uma <i>stylesheet</i> para transformar o XML em HTML.</p>
+        <p> - Criar um um servidor de ficheiros, escrito em <i>JavaScript</i> e usando <i>Node.js</i> que disponibilize os ficheiros XML criados na tarefa anterior. Estes ficheiros podem ser acedidos através da especificação na <i>query string</i> do <i>URL</i>.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC4/arq2html.xsl">arq2html.xsl - stylesheet para transformação dos XML dos arqueossítios em HTML</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC4/xml-split.xsl">xml-split.xsl - stylesheet para criar os ficheiros XML individuais</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC4/server.js">server.js - servidor</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC4/PR.xml">PR.xml - XML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/tree/master/TPC4/files">files - pasta com os ficheiros XML</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/tree/master/TPC4/PR.html">PR.html - HTML do Project Record</deliverable>
+    </deliverables>
+</pr>
