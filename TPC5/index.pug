@@ -1,0 +1,30 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-grey
+                h1.w3-center Tarefas
+                center
+                    img(src='https://cdn3.iconfinder.com/data/icons/business-part-1/48/Clipboard-List-Notes-Task-Memo-Office-512.png' style='width:150px; height:180px;')
+            .w3-container
+                h4.w3-black.w3-center Adicionar Tarefa
+                form.w3-contairner(action='/tarefa' method ='POST')
+                    label
+                        b Designação da Tarefa
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='Tarefa')
+                    label
+                        b Data Limite
+                    input.w3-input.w3-border.w3-light-grey(type='date' name='DataLimite')
+                    input.w3-ripple.w3-text-grey(type = 'submit' value = 'Adicionar')
+            .w3-container
+                h4.w3-black.w3-center Lista de Tarefas
+                table.w3-table-all
+                    tr.w3-grey
+                        th Tarefa
+                        th Data Limite
+                        each tarefa in lista
+                            tr.w3-light-gray
+                                td=tarefa.Tarefa
+                                td=tarefa.DataLimite
+            footer.w3-container.w3-grey.w3-center
+                adress Gerado por Lista Tarefas App

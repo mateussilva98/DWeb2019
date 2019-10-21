@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/Users/mateussilva/Desktop/Desenvolvimento%20Web/aula3_daweb/pr_oficial.dtd">
+<pr>
+    <metadata>
+        <keyname>DAWeb1920_TPC5</keyname>
+        <title>Trabalho prático 5</title>
+        <subtitle>Servidor para listar tarefas</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>19-10-2019</bdate>
+        <edate>21-10-2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81952</identifier>
+            <name>Mateus Ferreira da Silva</name>
+            <email>a81952@alunos.uminho.pt</email>
+            <git>https://github.com/mateussilva98</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Foi proposto que fosse feito um servidor para gestão de tarefas. Este servidor deve responder a um pedido GET ('/' ou '/index) sendo apresentada uma página com uma lista de tarefas registadas anteriormente e onde é possível acrescentar novas tarefas através de uma pedido POST.</p>
+        <p>Para realizar o trabalho foi necessário criar três ficheiros <i>pug</i>. O <i>layout.pug</i> que é igual ao desenvolvido na aula e vai ser extendido pelos dois outros ficheiros <i>pug</i>. O fiheiro <i>index.pug</i> é responsável por apresentar a página principal. Por fim, o <i>erro.pug</i> é o template a ser mostrado quando é feito um pedido não suportado pelo servidor.</p>
+        <p>O servidor foi desenvolvido em <i>Node.js</i> e está no ficheiro <i>gestao-tarefas.js</i> e deve processar os pedidos e responder-lhes da forma mais adequada.</p>
+        <p>É importante também referir que é usado um ficheiro <i>lista_tarefa.jsons</i> onde são guardadas as tarefas registadas.</p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/stylesheets/w3.css">w3.css - stylesheet</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/layout.pug">layout.pug</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/erro.pug">erro.pug</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/index.pug">index.pug</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/gestao-tarefas.js">gestao-tarefas.js - servidor</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/lista_tarefas.json">lista_tarefas.json</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC5/PR.xml">PR.xml - XML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/tree/master/TPC5/PR.html">PR.html - HTML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/tree/master/TPC5/files">files - pasta com o favicon.ico</deliverable>
+    </deliverables>
+</pr>
