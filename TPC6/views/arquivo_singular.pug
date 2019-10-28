@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3 Informação de Arquivo Sonoro
+            .w3-container
+                table.w3-table-all.w3-section
+
+                    tr
+                        th Título
+                        th Músico
+                        th Duração
+                        th Província
+                        th Local
+                        th Operações
+                    tr
+                        td= a.tit
+                        td= a.musico
+                        td= a.duracao
+                        td= a.prov
+                        td= a.local
+                        td
+
+                            button.w3-btn.w3-gray(onclick="eliminarItem('"+ a.tit +"')") Eliminar
+                            button.w3-btn.w3-gray(onclick="window.location.assign('/update/" + a.tit + "')") Atualizar
+
+        footer.w3-container.w3-blue-gray
+                adress Gerado por Arquivo Sonoro App - 
+                    a(href="/") Voltar à página principal

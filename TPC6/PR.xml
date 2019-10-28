@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/Users/mateussilva/Desktop/Desenvolvimento%20Web/aula3_daweb/pr_oficial.dtd">
+<pr>
+    <metadata>
+        <keyname>DAWeb1920_TPC6</keyname>
+        <title>Trabalho prático 6</title>
+        <subtitle>Construção de servidor em Node.JS usando Express para gestão de arquivos sonoros</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>26-10-2019</bdate>
+        <edate>28-10-2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81952</identifier>
+            <name>Mateus Ferreira da Silva</name>
+            <email>a81952@alunos.uminho.pt</email>
+            <git>https://github.com/mateussilva98</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Este trabalho baseou-se na contrução de um servidor em <i>Node.JS</i> capaz de manter e manipular um arquivo sonoro. 
+        Para isso, o <i>dataset</i> dos arquivos sonoros é mantido no servidor sob a forma de um ficheiro em formato <i>JSON</i>, permitindo a sua consulta e uma 
+        filosofia CRUD, isto é, é permitido adicionar novos arquivos sonoros, atualizar arquivos sonoros já existentes, eliminar 
+        arquivos sonoros e ainda consultar arquivos sonoros já existentes.</p>
+        <p>Para ter acesso a todos os arquivos sonoros basta aceder à página inicial, onde se podem encontrar estes os registos existentes até ao momento.</p>
+        <p>Todas as outras opções surgem como funcionalidades implementadas de forma simples e intuitiva, usando para isso botões e formulários.</p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/PR.xml">PR.xml - XML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/PR.html">PR.html - HTML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/routes/index.js">index.js - tratamento dos pedidos que chegam ao servidor</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/views/layout.pug">layout.pug - layout básico da aplicação</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/views/erro.pug">erro.pug - página de erro da aplicação</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/views/index.pug">index.pug - página inicial da aplicação</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/views/arquivo_singular.pug">arquivo_singular.pug - página de consulta de um arquivo sonoro</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/views/update.pug">update.pug - página de atualização de um arquivo sonoro</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/views/add.pug">add.pug - página de adição de um arquivo sonoro</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/arq-son-EVO.json">arq-son-EVO.json - ficheiro que serve de base de dados</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/public/javascripts/update.js">update.js - função de atualização de um registo</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/public/javascripts/delete.js">delete.js - função de eliminação de um registo</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC6/bin/www">www - ficheiro para executar o servidor</deliverable>
+        
+    </deliverables>
+</pr>

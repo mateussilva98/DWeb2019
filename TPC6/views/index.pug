@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3.w3-left Arquivo Sonoro
+                button.w3-btn.w3-gray.w3-right(style="margin-top:0.5%" onclick="window.location.assign('/add')") Adicionar novo Arquivo Sonoro
+
+            .w3-container
+                table.w3-table-all.w3-section
+                    tr
+                        th Título
+                        th Músico
+                        th Duração
+                        th Província
+                        th Local
+                        th Operações
+                    each a in lista
+                        tr
+                            td= a.tit
+                            td= a.musico
+                            td= a.duracao
+                            td= a.prov
+                            td= a.local
+                            td
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/a/" + a.tit + "')") Consultar
+                                button.w3-btn.w3-gray(onclick="eliminarItem('"+ a.tit +"')") Eliminar
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/update/" + a.tit + "')") Atualizar

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3 Atualizar Arquivo Sonoro
+            .w3-container
+                input.w3-input.w3-border.w3-section.w3-gray(id="tit" type="text" name="tit" value=a.tit)
+                input.w3-input.w3-border.w3-section.w3-gray(id="musico" type="text" name="musico" value=a.musico)
+                input.w3-input.w3-border.w3-section.w3-gray(id="duracao" type="time" name="duracao" value=a.duracao)
+                input.w3-input.w3-border.w3-section.w3-gray(id="prov" type="text" name="prov" value=a.prov)
+                input.w3-input.w3-border.w3-section.w3-gray(id="local" type="text" name="local" value=a.local)
+
+                button.w3-btn.w3-margin-bottom.w3-right.w3-gray(onclick="update_mus('" + a.tit + "')") Atualizar
+
+
+        footer.w3-container.w3-blue-gray
+                adress Gerado por Arquivo Sonoro App - 
+                    a(href="/") Voltar à página principal
