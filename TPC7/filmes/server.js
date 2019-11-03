@@ -4,13 +4,13 @@ const path = require('path');
 const logger = require('morgan');
 const colors = require('colors');
 const dotenv = require('dotenv');
-//const connectDB = require('./config/db');
+const connectDB = require('./config/db');
 
 // carregar as variaveis do env
 dotenv.config({ path: './config/config.env' });
 
 // connect to database
-//connectDB();
+connectDB();
 
 // route files
 const filmesRouter = require('./routes/filmes');
