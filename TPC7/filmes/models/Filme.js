@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const FilmeSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: true,
+    unique: true,
+    maxlength: [50, 'Name can not be more than 50 characters']
   },
   year: {
     type: Number,
