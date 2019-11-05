@@ -20,11 +20,11 @@
     <abstract>
         <p>Este trabalho consistiu essencialmente em duas tarefas:</p>
         <p>
-            <b>1ª Tarefa: </b> Criar três queries em MongoDB que permitam obter o pedido.</p>
+            <b>1ª Tarefa: </b> Criar três <i>queries</i> em <i>MongoDB</i> que permitam obter o pedido.</p>
         <p>
-            <b>2ª Tarefa: </b> Criar um servidor em Node.js usando o Express que disponibilize e permita gerir os documentos referentes a uma base de dados 
+            <b>2ª Tarefa: </b> Criar um servidor em <i>Node.js</i> usando o <i>Express</i> que disponibilize e permita gerir os documentos referentes a uma base de dados 
         de filmes guardados no MongoBD. </p>
-        <p>De forma a ser possível gerir esta informação, há varias operações que devem estar implementadas, nomeadamente os serviços <b>CRUD</b> (            <b>C</b>reate <b>R</b>ead <b>U</b>pdate <b>D</b>elete). São estas operações 
+        <p>De forma a ser possível gerir esta informação, há varias operações que devem estar implementadas, nomeadamente os serviços <b>CRUD</b> (<b>C</b>reate <b>R</b>ead <b>U</b>pdate <b>D</b>elete). São estas operações 
         a listagem de todos os filmes, a consulta de um filme, a adição de um novo filme, a remoção de filmes e a atualização de filmes já existentes.</p>
         <p>Como forma de simplificação e para não sobrecarregar o servidor, na listagem de todos os filmes limitei o número de filmes que são apresentados. Ainda tentei 
         implementar um sistema de paginação, mas não tive tempo para tal. Para além disso, não é possível adicionar e remover atore e generos nos filmes.</p>
