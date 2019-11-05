@@ -12,22 +12,16 @@ block content
                     tr
                         th Título
                         th Ano
-                        th Elenco
-                        th Géneros
                         th Operações
                     each f in filmes
                         tr
                             td= f.title
                             td= f.year
+                        
                             td
-                                ul
-                                    each c in f.cast
-                                        li= c
-                            td
-                                ul
-                                    each g in f.genres
-                                        li= g
-                            td
-                                button.w3-btn.w3-gray(onclick="window.location.assign('/filmes/" + f._id + "')") Consultar
-                                button.w3-btn.w3-gray(onclick="eliminarFilme('" + f._id + "')") Eliminar
-                                button.w3-btn.w3-gray(onclick="window.location.assign('/filmes/update/" + f._id + "')") Atualizar
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/filmes/" + f._id + "')")
+                                    i.fa.fa-info-circle
+                                button.w3-btn.w3-gray(onclick="eliminarFilme('" + f._id + "')")
+                                    i.fa.fa-times-circle
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/filmes/update/" + f._id + "')")
+                                    i.fa.fa-pencil
