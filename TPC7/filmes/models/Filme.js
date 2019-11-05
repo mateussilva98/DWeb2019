@@ -4,7 +4,7 @@ const FilmeSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    unique: true,
+    trim: true,
     maxlength: [50, 'Name can not be more than 50 characters']
   },
   year: {

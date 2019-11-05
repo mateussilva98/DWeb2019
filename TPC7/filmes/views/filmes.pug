@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3.w3-left Arquivo Filmes
+                button.w3-btn.w3-gray.w3-right(style="margin-top:0.5%" onclick="window.location.assign('/filmes/adicionar')") Adicionar novo Filme
+
+            .w3-container
+                table.w3-table-all.w3-section
+                    tr
+                        th Título
+                        th Ano
+                        th Elenco
+                        th Géneros
+                        th Operações
+                    each f in filmes
+                        tr
+                            td= f.title
+                            td= f.year
+                            td
+                                ul
+                                    each c in f.cast
+                                        li= c
+                            td
+                                ul
+                                    each g in f.genres
+                                        li= g
+                            td
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/filmes/" + f._id + "')") Consultar
+                                button.w3-btn.w3-gray(onclick="eliminarFilme('" + f._id + "')") Eliminar
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/filmes/update/" + f._id + "')") Atualizar

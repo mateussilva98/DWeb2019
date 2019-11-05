@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3 Adicionar novo Arquivo Sonoro
+            form.w3-container(action="/filmes" method="POST")
+                input.w3-input.w3-border.w3-section.w3-light-grey(type="text" name="title" placeholder="Título")
+                input.w3-input.w3-border.w3-section.w3-light-grey(type="text" name="year" placeholder="Ano")
+                input.w3-btn.w3-margin-bottom.w3-right.w3-gray(type="submit" value="Adicionar")
+
+        .w3-container.w3-blue-gray
+        footer.w3-container.w3-blue-gray
+                adress Gerado por Arquivo Filmes - 
+                    a(href="/filmes") Voltar à página principal
