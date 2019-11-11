@@ -2,7 +2,7 @@ var Premio = require('../models/Premio');
 
 // Devolve a lista de prémios apenas com os campos "year" e "category";
 module.exports.listarPremios = () => {
-  return Prize.find({}, { _id: 0, year: 1, category: 1 })
+  return Premio.find({}, { _id: 0, year: 1, category: 1 })
     .sort({ year: 'desc', category: 'asc' })
     .exec();
 };

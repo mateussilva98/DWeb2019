@@ -13,7 +13,6 @@ dotenv.config({ path: './config/config.env' });
 connectDB();
 
 // route files
-var indexRouter = require('./routes/index');
 var premiosRouter = require('./routes/premios');
 var apiRouter = require('./routes/api');
 
@@ -34,8 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', apiRouter);
-app.use('/', indexRouter);
-app.use('/premios', premiosRouter);
+app.use('/', premiosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

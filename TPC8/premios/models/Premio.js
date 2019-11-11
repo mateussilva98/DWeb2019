@@ -33,7 +33,7 @@ var premioSchema = new mongoose.Schema({
     required: true
   },
   overallMotivation: String,
-  laureates: [LaureateSchema]
+  laureates: [laureatesSchema]
 });
 
 module.exports = mongoose.model('Premio', premioSchema);
