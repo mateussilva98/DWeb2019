@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/Users/mateussilva/Desktop/Desenvolvimento%20Web/aula3_daweb/pr_oficial.dtd">
+<pr>
+    <metadata>
+        <keyname>DAWeb1920_TPC8</keyname>
+        <title>Trabalho prático 8</title>
+        <subtitle>API's de dados em Node.js com Express para Prémios Nobel</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>03-11-2019</bdate>
+        <edate>05-10-2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A81952</identifier>
+            <name>Mateus Ferreira da Silva</name>
+            <email>a81952@alunos.uminho.pt</email>
+            <git>https://github.com/mateussilva98</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Este trabalho consistiu, essencialmente, na construção de uma API de dados para a base de dados de Prémios Nobel.</p>
+        <p>A API de dados que foi necessário desenvolver corresponde a um exercício que pode ser encontrado <xref url="http://www4.di.uminho.pt/~jcr/AULAS/didac/RepFichas/site/fichas/dweb2019-e2.html#e1">aqui</xref>.</p>
+        <p>Para a construção desta aplicação WEB foram fundamentais as ferramentas node Express, mongoose e axios. </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/PR.xml">PR.xml - XML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/PR.html">PR.html - HTML do Project Record</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/config">config - pasta que contém um ficheiro com as configs e um ficheiro que trata da ligação à base de dados</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/controllers">controllers - pasta que contém o controller dos premios</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/models">models - pasta que contém o model dos premios</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/public/stylesheets">stylesheets - pasta de contém o stylesheet</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/routes">routes - pasta de contém o toute de premios</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/views">views - pasta de contém as views</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/server.js">server.js - ficheiro do server</deliverable>
+        <deliverable path="https://github.com/mateussilva98/DWeb2019/blob/master/TPC8/premios/package.json">package.json - ficheiro com a forma como podemos correr o server e onde são referidas as suas dependências</deliverable>
+    </deliverables>
+</pr>
