@@ -9,7 +9,6 @@ var Premios = require('../controllers/premios');
 /* GET listas de premios*/
 
 router.get('/premios', function(req, res, next) {
-  console.log('asjhgdhjasfdjha');
   if (req.query.categoria != undefined && req.query.year == undefined) {
     //listar por categorias
     Premios.listarPremiosCategoria(req.query.categoria)
@@ -29,8 +28,8 @@ router.get('/premios', function(req, res, next) {
 });
 
 /* GET premio individual */
-router.get('/premios/:idPremio', function(req, res, next) {
-  Premios.premioId(req.params.idPremio)
+router.get('/premios/:id', function(req, res, next) {
+  Premios.premioID(req.params.id)
     .then(dados => res.jsonp(dados))
     .catch(erro => res.status(500).jsonp(erro));
 });

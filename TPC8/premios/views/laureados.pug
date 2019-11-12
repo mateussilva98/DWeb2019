@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3 Lista de laureados distintos
+            .w3-container
+                table.w3-table-all.w3-section
+                    each l in lista
+                        tr
+                            th Laureado
+                            td= l._id
+                        tr
+                            th Prémios
+                            td
+                                table.w3-table-all.w3-section
+                                    tr
+                                        th Ano
+                                        th Categoria
+                                    each p in l.premios
+                                        tr
+                                            td= p.year
+                                            td= p.category
+
+
+        footer.w3-container.w3-blue-gray
+                adress Gerado por Arquivo Prémios Nobel - 
+                    a(href="/") Voltar à página principal

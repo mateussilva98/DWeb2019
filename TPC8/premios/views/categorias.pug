@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3 Lista de categorias distintas
+            .w3-container
+                table.w3-table-all.w3-section
+                    tr
+                        th Categorias
+
+                    tr
+                       each c in lista
+                            tr  
+                                td=c
+
+
+        footer.w3-container.w3-blue-gray
+                adress Gerado por Arquivo Prémios Nobel - 
+                    a(href="/") Voltar à página principal

@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3 Informação de Prémio Nobel
+            .w3-container
+                table.w3-table-all.w3-section
+                    if p.category
+                        tr
+                            th Categoria
+                            td= p.category
+                    if p.year
+                        tr
+                            th Ano
+                            td= p.year
+                    if p.overallMotivation
+                        tr
+                            th Contribuição do Trabalho
+                            td= p.overallMotivation
+                    if p.laureates.length > 0
+                        tr
+                            th Laureados
+                            td
+                                table.w3-table-all.w3-section
+                                    tr
+                                        th Id
+                                        th Nome
+                                        th Contribuição Individual
+                                        th Share
+                                    each l in p.laureates
+                                        tr
+                                            td= l.id
+                                            td= l.firstname + ' ' + l.surname
+                                            td= l.motivation
+                                            td= l.share
+
+
+        footer.w3-container.w3-blue-gray
+                adress Gerado por Arquivo Prémios Nobel - 
+                    a(href="/") Voltar à página principal

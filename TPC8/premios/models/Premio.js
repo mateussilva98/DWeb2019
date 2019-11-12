@@ -24,6 +24,7 @@ var laureatesSchema = new mongoose.Schema({
 });
 
 var premioSchema = new mongoose.Schema({
+  _id: String,
   year: {
     type: String,
     required: true

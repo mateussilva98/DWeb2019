@@ -1,15 +1,22 @@
 var Premio = require('../models/Premio');
+var ObjectId = require('mongodb').ObjectID;
 
 // Devolve a lista de prémios apenas com os campos "year" e "category";
-module.exports.listarPremios = () => {
+/*module.exports.listarPremios = () => {
   return Premio.find({}, { _id: 0, year: 1, category: 1 })
     .sort({ year: 'desc', category: 'asc' })
     .exec();
+};*/
+module.exports.listarPremios = () => {
+  return Premio.aggregate([
+    { $project: { year: true, category: true } },
+    { $sort: { year: -1, category: 1 } }
+  ]).exec();
 };
 
 // Devolve a informação completa de um prémio;
-module.exports.premioId = id => {
-  return Premio.find({ _id: id }).exec();
+module.exports.premioID = id => {
+  return Premio.findOne(ObjectId(id)).exec();
 };
 
 // Devolve a lista de categorias, sem repetições;
@@ -38,6 +45,6 @@ module.exports.laureados = () => {
       }
     },
     { $group: { _id: '$name', premios: { $push: '$premio' } } },
-    { $sort: { name: 1 } }
+    { $sort: { name: 1 } } //nao esta a funcionar o sort
   ]).exec();
 };

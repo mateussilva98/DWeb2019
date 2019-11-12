@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Arquivo de Premios Nobel
+
+    .w3-container
+                table.w3-table-all.w3-section
+                    tr
+                        td 
+                            a(href="http://localhost:5050/premios") Lista de prémios
+                    tr 
+                        td 
+                            a(href="http://localhost:5050/premios/categorias") Lista de categorias
+                    tr
+                        td
+                            a(href="http://localhost:5050/premios/laureados") Lista de laureados
+                    tr
+                        td Procurar prémio de uma dada categoria
+                        th       
+                            form.w3-contairner(action='/premios' method ='GET')
+                                label
+                                    b Categoria
+                                input.w3-input.w3-border( required type='text' name='categoria')
+                                input.w3-btn.w3-blue-grey(type = 'submit' value ='Procurar')
+                    tr
+                        td Procurar prémio dada uma categoria de anos superiores ao indicado
+                        th 
+                            form.w3-contairner(action='/premios' method ='GET')
+                                label
+                                    b Categoria
+                                input.w3-input.w3-border(required type='text' name='categoria' style="width: 20%;")
+                                label
+                                    b Ano
+                                input.w3-input.w3-border(required type='text' name='year' style="width: 20%; margin-bottom: 10px;")
+                                input.w3-btn.w3-blue-grey(type = 'submit' value ='Procurar')
+
+    footer.w3-container.w3-blue-gray
+            adress Gerado por Arquivo Prémios Nobel
