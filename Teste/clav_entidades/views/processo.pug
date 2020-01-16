@@ -1,0 +1,126 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h2 Informação de Processo
+            .w3-container
+                button.w3-btn.w3-gray(onclick="history.back()")
+                    i.fa.fa-reply
+                p Voltar
+            .w3-container
+                table.w3-table-all.w3-section
+                    if processo.codigo
+                        tr
+                            th Código
+                            td= processo.codigo
+                    if processo.titulo
+                        tr
+                            th Título
+                            td= processo.titulo
+                    if processo.descricao
+                        tr
+                            th Descrição
+                            td= processo.descricao
+                    if processo.status
+                        tr
+                            th Status
+                            td= processo.status
+                    if processo.tipoProc
+                        tr
+                            th Tipo Processo
+                            td= processo.tipoProc
+                    if processo.notasAp.length > 0
+                        tr
+                            th Notas AP
+                            td
+                                table.w3-table-all.w3-section
+                                    tr
+                                        th Notas
+                                    each n in processo.notasAp
+                                        tr
+                                            td= n.nota
+            if processo.donos.length > 0
+                .w3-container
+                    h3 Donos
+                    table.w3-table-all.w3-section
+                        tr
+                            th Sigla
+                            th ID Dono
+                            th ID tipo
+                            th Designação
+                            th Visualizar 
+                        each d in processo.donos
+                            tr
+                                td= d.sigla
+                                td= d.idDono
+                                td= d.idTipo
+                                td= d.designacao
+                                td
+                                    button.w3-btn.w3-gray(onclick="window.location.assign('/entidades/" + d.idDono + "')")
+                                        i.fa.fa-info-circle
+
+            if processo.participantes.length > 0
+                .w3-container
+                    h3 Participantes
+                    table.w3-table-all.w3-section
+                        tr
+                            th Sigla
+                            th ID Participante
+                            th ID tipo
+                            th Designação
+                            th Visualizar 
+                        each p in processo.participantes
+                            tr
+                                td= p.sigla
+                                td= p.idParticipante
+                                td= p.idTipo
+                                td= p.designacao
+                                td
+                                    button.w3-btn.w3-gray(onclick="window.location.assign('/entidades/" + p.idParticipante + "')")
+                                        i.fa.fa-info-circle
+
+            if processo.processosRelacionados.length > 0
+                .w3-container
+                    h3 Processos Participantes
+                    table.w3-table-all.w3-section
+                        tr
+                            th Código
+                            th ID Relação
+                            th Título
+                            th Status
+                            th Visualizar 
+                        each par in processo.processosRelacionados
+                            tr
+                                td= par.codigo
+                                td= par.idRel
+                                td= par.titulo
+                                td= par.status
+                                td
+                                    button.w3-btn.w3-gray(onclick="window.location.assign('/processo/c" + par.codigo + "')")
+                                        i.fa.fa-info-circle
+            if processo.legislacao.length > 0
+                .w3-container
+                    h3 Legislações
+                    table.w3-table-all.w3-section
+                        tr
+                            th Tipo
+                            th Número
+                            th Sumário
+                            th Visualizar 
+                        each l in processo.legislacao
+                            tr
+                                td= l.tipo
+                                td= l.numero
+                                td= l.sumario
+                                td
+                                    button.w3-btn.w3-gray(onclick="window.location.assign('/legislacao/" + l.idLeg + "')")
+                                        i.fa.fa-info-circle
+            .w3-container
+                button.w3-btn.w3-gray(onclick="history.back()")
+                    i.fa.fa-reply
+                p Voltar
+        footer.w3-container.w3-blue-gray
+                adress Gerado por CLAV - 
+                    a(href="/entidades") Voltar à página principal

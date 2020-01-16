@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    .w3-container.w3-section
+        .w3-card-4
+            header.w3-container.w3-blue-gray
+                h3.w3-left Arquivo Entidades
+                h6.w3-left Um catálogos presentes na plataforma CLAV, que se encontra em desenvolvimento no DI/UM em parceria e sob encomenda da Direção Geral do Livro, Arquivos e Bibliotecas (DGLAB) que visa a classificação e a avaliação de toda a documentação circulante na administração pública portuguesa, é o catálogo de entidades.
+                h6.w3-left O catálogo referido é apresentado de seguida, sendo possível de seguida visualizar detalhes de cada entidade.
+            .w3-container
+                table.w3-table-all.w3-section
+                    tr
+                        th Designação
+                        th Sigla
+                        th Visualizar
+                    each p in lista
+                        tr
+                            td= p.designacao
+                            td= p.sigla
+                            td
+                                button.w3-btn.w3-gray(onclick="window.location.assign('/entidades/" + p.id + "')")
+                                    i.fa.fa-info-circle

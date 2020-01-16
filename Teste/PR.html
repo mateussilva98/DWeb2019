@@ -1,0 +1,102 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Teste Desenvolvimento de Aplicações Web</title>
+      <meta charset="UTF8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   </head>
+   <body>
+      <h1 align="center">Teste Desenvolvimento de Aplicações Web</h1>
+      <h6 align="right">TESTE_DAW_2019_2020</h6>
+      <h6 align="right">PR relativo à resolução do teste</h6>
+      <hr>
+      <hr>
+      <table class="w3-table">
+         <tr>
+            <th>Supervisor</th>
+            <td><a target="_blank" href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</a></td>
+         </tr>
+         <tr>
+            <th><b>Data Início</b></th>
+            <td>16-01-2020</td>
+         </tr>
+         <tr>
+            <th><b>Data Final</b></th>
+            <td>16-01-2020</td>
+         </tr>
+      </table>
+      <hr>
+      <div class="w3-container">
+         
+         <li>A81952 - <a href="https://github.com/mateussilva98" target="_blank">Mateus Ferreira da Silva</a> - <a href="mailto:a81952@alunos.uminho.pt">a81952@alunos.uminho.pt</a></li>
+         
+      </div>
+      <hr>
+      <div class="w3-container">
+         <h3>Abstract:</h3>
+         <p>O teste apresentado para resolução consiste na resolução de dois exercícios.</p>
+         <p>O <b>primeiro exercício</b> consiste na criação de um servidor em <b>NodeJS</b> que dê suporte a 
+            uma API de dados de obras musicais.
+         </p>
+         <p>Para a realização deste exercício foi necessário ir buscar o ficheiro de dados, que
+            pode ser 
+            encontrado <a href="http://www4.di.uminho.pt/~jcr/Transfers/datasets/arquivo-musica-digital.xml" target="_blank">aqui</a>, 
+            feita a conversão deste ficheiro <b>xml</b> para <b>json</b> usando um simples conversor online, e de seguida colocado no sistema 
+            escolhido para assegurar a persistência do dataset, 
+            o <b>MongoDB</b>. Para realizar a importação dos dados para o sistema de bases de dados foi utilizado
+            
+            o seguinte comando: <b>mongoimport -d obras -c obras --jsonArray obras.json</b>.
+         </p>
+         <p>Seguidamente, e para a construção do servidor em <b>NodeJS</b>, usando o <b>Express</b>, começou-se por 
+            criar o modelo do <b>Schema</b> dos dados, usando o <b>mongoose</b>. O Schema principal, <b>obrasSchema</b>, 
+            incorpora o schema dos instrumentos, o <b>instrumentoSchema</b>, que por sua vez incorpora o schema das partituras, 
+            o <b>partituraSchema</b>. De seguida foi desenvolvido o controlador, responsável por
+            realizar as queries à base de dados. De referir que as últimas duas queries tinham
+            uma complexidade elevada 
+            (número de partituras por obra, e as obras com partituras para um determinado instrumento).
+            Após tudo feito, 
+            incluindo a conexão à base de dados a partir do servidor, e
+            criação das rotas no <b>app.js</b>, procedeu-se à realização das rotas para a API de dados. Por fim, de notar que,
+            para correr o servidor, deve estar a correr o servidor <b>Mongo</b> com os dados do dataset e o servidor <b>Node</b> que se encontra
+            correr na porta 3000
+         </p>
+         <p>No <b>segundo exercício</b>, o objetivo passa por utilizar uma API externa, nomeadamente, da CLAV e 
+            construir uma interface gráfica que satisfaça as respostas dados por essa API.
+         </p>
+         <p>Para isso, as rotas criadas no servidor <b>Node</b> desenvolvido reencaminham para a API de dados e recebem 
+            resultados. Com esses resultados são feitas páginas web interativas. As páginas requiridas
+            no enunciado do teste
+            são uma <b>lista de entidade</b> (com a sigla e designação) e para cada entidade uma <b>página com a informação de cada entidade</b> 
+            (lista de tipologias a que pertence, os processos em que é dona e os processos em
+            que é participante)
+         </p>
+         <p>Como o tempo para realização do teste era extenso e após analisar a API do CLAV <a href="http://clav-api.dglab.gov.pt/docs/" target="_blank">aqui</a>, 
+            decidi fazer também uma página para cada tipologia (contendo a informação basica de
+            cada uma, as entidades que pertencem, os 
+            processos de que a tipologia é dona e os processos em que participa). Também foi desenvolvida
+            em <b>página para 
+               cada processo</b> (contém a informação do processo, as entidades donos, as entidades participantes,
+            os processos relacionados 
+            e as legislações) e, por fim, uma <b>página para cada legislação (contém informação da legislação). </b></p>
+         <p>Importante referir que cada página, exepto a inicial, <b>possui dois botões (inicio e final da página) para voltar à página 
+               anterior</b>, permitindo uma melhor navegação, e possuem também um <b>link para voltar à página inicial.</b> Para além disto,
+            cada entidade, tipologia, processo ou legislação possui um botão para permitir aceder
+            à informação do mesmo.
+         </p>
+         <p>Por fim, importante referir que, todas as páginas web foram desenvolvidas em <b>pug</b> e que o servidor se encontra 
+            a correr na porta 3001
+         </p>
+      </div>
+      <hr>
+      <div class="w3-container">
+         <h3>Deliverables:</h3>
+         <ol>
+            <li><a target="_blank" href="https://github.com/mateussilva98/DWeb2019/blob/master/Teste/PR.xml">PR.xml - XML do Project Record</a></li>
+            <li><a target="_blank" href="https://github.com/mateussilva98/DWeb2019/blob/master/Teste/PR.html">PR.html - HTML do Project Record</a></li>
+            <li><a target="_blank" href="https://github.com/mateussilva98/DWeb2019/blob/master/Teste/respostas.txt">Respostas à pergunta 2</a></li>
+            <li><a target="_blank" href="https://github.com/mateussilva98/DWeb2019/blob/master/Teste/API_obras">Exercício 1 - API obras músicais</a></li>
+            <li><a target="_blank" href="https://github.com/mateussilva98/DWeb2019/blob/master/Teste/CLAV_entidades">Exercício 2 - CLAV</a></li>
+         </ol>
+      </div>
+   </body>
+</html>
