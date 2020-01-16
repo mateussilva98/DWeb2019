@@ -55,7 +55,8 @@
         <p>Por fim, importante referir que, todas as páginas web foram desenvolvidas em <b>pug</b> e que o servidor se encontra 
             a correr na porta 3001</p>
         <p>Resumidamente, considero que os objetivos foram cumpridos, tendo explorado bem as diversas rotas da API disponibilizada,
-            sendo que a única dificuldade sentida foi na realização do pedido de contagem de partiturasm não tendo realizado esse ponto com sucesso.</p>
+            sendo que a única dificuldade sentida foi na realização do pedido de contagem de partituras ,não tendo realizado esse ponto com sucesso. Reparei 
+            no final que não estava a conseguir usar a query desenvolvida porque os instrumentos estavam dentro de um objeto e não dentro de um array.</p>
         
     </abstract>
     <deliverables>
